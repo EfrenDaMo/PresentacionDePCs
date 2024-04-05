@@ -23,6 +23,7 @@ body {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 40px;
+    cursor:pointer;
 
     /*Animacion de Resalto*/
     &:hover {
@@ -31,6 +32,10 @@ body {
         top: -6px;
         border: 1px solid #94d5fa;
     }
+}
+
+.cards:active {
+    background-color: black;
 }
 
 /* Estilos de id */
