@@ -1,6 +1,8 @@
 # PresentacionDePCs
 
-## Colaboradores Principales:
+## Equipo
+
+### Colaboradores Principales:
 
 - Efren D. Morales G.
 - Eduardo Velazquez F.
