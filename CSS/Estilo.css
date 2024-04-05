@@ -1,0 +1,48 @@
+/* Estilos de Componentes HTML */
+body {
+    background-color: rgb(238, 148, 235);
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+}
+
+/* Estilos de Clases */
+.cards {
+    width: 282.25px;
+    height: 420px;
+    outline-width: 10px;
+    outline-color: black;
+    outline-style:solid;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.cards:hover {
+    margin-bottom: 100px;
+}
+
+/* Estilos de id */
+#cardContainer {
+    height: 500px;
+    width: 90vw;
+    display: flex;
+    margin-left: 75px;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+#card1 {
+    background-color: aqua;
+}
+
+#card2 {
+    background-color:aquamarine;
+}
+
+#card3 {
+    background-color:blue ;
+}
+
