@@ -54,9 +54,36 @@ body {
 
 #card2 {
     background-color:aquamarine;
+    width: calc(282.25px * 1.20);
+    height: calc(420px * 1.20); /* incremento del 20% */
 }
 
 #card3 {
     background-color:blue ;
 }
 
+/* se modifica el contenido*/
+.contenido{
+    text-align: center;
+    margin-top: 50px;
+    counter-increment: 20%;
+}
+
+/* se modifican las imagenes */
+.imagen_arqui{
+    width: 260px;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+.imagen_student{
+    width: 260px;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+
+.img_cualquiera{
+    width: 200px;
+    border-radius: 6px;
+    margin-top: 50px;
+}
