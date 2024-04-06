@@ -58,10 +58,6 @@ body {
     }
 }
 
-.hide {
-    display: none;
-}
-
 /* Estilos de id */
 #Carousel {
     position: relative;
@@ -94,6 +90,11 @@ body {
 
 #cardContainer > div.show {
     opacity: 1;
+}
+
+#cardContainer > div.uninteractable  {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #card1 {

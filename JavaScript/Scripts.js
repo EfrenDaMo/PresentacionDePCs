@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     slides.forEach((slide, i) => {
         if (i === index) {
             slide.classList.add("show");
-            slide.classList.remove("hide");
+            slide.classList.remove("uninteractable");
         } else {
             slide.classList.remove("show");
-            slide.classList.add("hide");
+            slide.classList.add("uninteractable");
         }
     });
   }
