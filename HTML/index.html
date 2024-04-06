@@ -3,21 +3,48 @@
     <head>
         <link rel="stylesheet" href="../CSS/Estilo.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../JavaScript/Scripts.js"></script>
     </head>
 
     <body>
-        <div id="cardContainer">
-            <div class="cards" id="card1">
+        <div id="Carousel">
+            <h1> Propuestas </h1>
+            <button class="buttons" id="prevBtn"><img src="../SVG/arrow-left-solid.svg" alt="Flecha Izquierda"></button>
 
+            <div id="cardContainer">
+                <div class="slide" id="Slide1">
+                    <h2> Arquitecto </h2>
+                    <div class="cards" id="card1" onclick="console.log('Clicked card 1');">
+    
+                    </div>
+                    
+                    <div class="cards" id="card2">
+        
+                    </div>
+        
+                    <div class="cards" id="card3">
+        
+                    </div>
+                </div>
+    
+                <div class="slide" id="Slide2">
+                    <h2> Alumno de Secundaria</h2>
+                    
+                    <div class="cards" id="card4" onclick="console.log('Clicked card 4');">
+    
+                    </div>
+                    
+                    <div class="cards" id="card5">
+        
+                    </div>
+        
+                    <div class="cards" id="card6">
+        
+                    </div>
+                </div>
             </div>
             
-            <div class="cards" id="card2">
-
-            </div>
-
-            <div class="cards" id="card3">
-
-            </div>
+            <button class="buttons" id="nextBtn"><img src="../SVG/arrow-right-solid.svg" alt="Flecha Derecha"></button>
         </div>
     </body>
 </html>
