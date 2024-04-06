@@ -1,146 +1,145 @@
 /* Estilos de Componentes HTML */
 body {
-    background-color: rgb(238, 148, 235);
-    justify-content: center;
+  background-color: rgb(238, 148, 235);
+  justify-content: center;
 }
 
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
 /* Estilos de Clases */
 .cards {
-    display: inline-block;
-    width: 282.25px;
-    height: 420px;
-    top:0;
-    position: relative;
-    border-radius: 20px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    border: 1px solid #afe0e9;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 40px;
-    cursor:pointer;
+  display: inline-block;
+  width: 282.25px;
+  height: 420px;
+  top: 0;
+  position: relative;
+  border-radius: 20px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #afe0e9;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 /*Animacion de Resalto*/
 .cards:hover {
-    transition: all 0.3s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
-    top: -6px;
-    border: 1px solid #94d5fa;
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+  top: -6px;
+  border: 1px solid #94d5fa;
 }
 
-.buttons{
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(238, 148, 235);
-    border: none;
-    cursor: pointer;
+.buttons {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(238, 148, 235);
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
-    }
+  &:hover {
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+  }
 }
 
 .slide {
-    flex: 0 0 100%;
-    margin-left: 80px;
-    h2 {
-        font-size: 40px;
-    }
+  flex: 0 0 100%;
+  margin-left: 80px;
+  h2 {
+    font-size: 40px;
+  }
 }
 
 /* Estilos de id */
 #Carousel {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
-    h1{
-        position: absolute;
-        font-size: 55px;
-    }
+  h1 {
+    position: absolute;
+    font-size: 55px;
+  }
 }
 
-#cardContainer { 
-    height: 85vh;
-    width: 90vw;
-    display: flex;
-    margin-top: 60px;
-    padding-right: 75px;
-    justify-content: center;
-    overflow: hidden;
-    white-space: nowrap;
+#cardContainer {
+  height: 85vh;
+  width: 90vw;
+  display: flex;
+  margin-top: 60px;
+  padding-right: 75px;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #cardContainer > div {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 #cardContainer > div.show {
-    opacity: 1;
+  opacity: 1;
 }
 
-#cardContainer > div.uninteractable  {
-    opacity: 0;
-    pointer-events: none;
+#cardContainer > div.uninteractable {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #card1 {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 #card2 {
-    background-color:aquamarine;
+  background-color: aquamarine;
 }
 
 #card3 {
-    background-color:blue ;
+  background-color: blue;
 }
 
 #card4 {
-    background-color:blueviolet;
+  background-color: blueviolet;
 }
 
 #card5 {
-    background-color:cadetblue;
+  background-color: cadetblue;
 }
 
 #card6 {
-    background-color:cornflowerblue ;
+  background-color: cornflowerblue;
 }
 
 #prevBtn {
-    left: -.5px;
-    margin-left: 20px;
+  left: -0.5px;
+  margin-left: 20px;
 }
 
 #nextBtn {
-    right: -.5px;
-    margin-right: 20px;
-    margin-left: 10px;
+  right: -0.5px;
+  margin-right: 20px;
+  margin-left: 10px;
 }
 
 #Slide1 {
-    h2 {
-        padding-left: 42%;
-    }
+  h2 {
+    padding-left: 42%;
+  }
 }
 
-
 #Slide2 {
-    h2 {
-        padding-left: 33%;
-    }
+  h2 {
+    padding-left: 33%;
+  }
 }

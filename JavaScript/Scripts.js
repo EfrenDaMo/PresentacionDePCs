@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
-        if (i === index) {
-            slide.classList.add("show");
-            slide.classList.remove("uninteractable");
-        } else {
-            slide.classList.remove("show");
-            slide.classList.add("uninteractable");
-        }
+      if (i === index) {
+        slide.classList.add("show");
+        slide.classList.remove("uninteractable");
+      } else {
+        slide.classList.remove("show");
+        slide.classList.add("uninteractable");
+      }
     });
   }
 
