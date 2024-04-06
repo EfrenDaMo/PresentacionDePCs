@@ -51,8 +51,10 @@ body {
 }
 
 .slide {
+    flex: 0 0 100%;
+    padding-left: 80px;
     h2 {
-        padding-left: 43%;
+        padding-left: 40%;
         font-size: 40px;
     }
 }
@@ -78,6 +80,17 @@ body {
     justify-content: center;
     overflow: hidden;
     white-space: nowrap;
+    transition: transform 0.5s ease-in-out;
+}
+
+#cardContainer > div {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#cardContainer > div.show {
+    opacity: 1;
 }
 
 #card1 {
@@ -117,6 +130,6 @@ body {
 
 #Slide2 {
     h2 {
-        padding-left: 33%;
+        padding-left: 30%;
     }
 }
