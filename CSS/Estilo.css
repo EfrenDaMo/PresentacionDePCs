@@ -24,14 +24,14 @@ body {
     margin-right: 50px;
     margin-top: 40px;
     cursor:pointer;
+}
 
-    /*Animacion de Resalto*/
-    &:hover {
-        transition: all 0.3s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
-        top: -6px;
-        border: 1px solid #94d5fa;
-    }
+/*Animacion de Resalto*/
+.cards:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+    top: -6px;
+    border: 1px solid #94d5fa;
 }
 
 .buttons{
@@ -54,9 +54,12 @@ body {
     flex: 0 0 100%;
     margin-left: 80px;
     h2 {
-        padding-left: 42%;
         font-size: 40px;
     }
+}
+
+.hide {
+    display: none;
 }
 
 /* Estilos de id */
@@ -81,7 +84,6 @@ body {
     justify-content: center;
     overflow: hidden;
     white-space: nowrap;
-    transition: transform 0.5s ease-in-out;
 }
 
 #cardContainer > div {
@@ -128,6 +130,13 @@ body {
     margin-right: 20px;
     margin-left: 10px;
 }
+
+#Slide1 {
+    h2 {
+        padding-left: 42%;
+    }
+}
+
 
 #Slide2 {
     h2 {
