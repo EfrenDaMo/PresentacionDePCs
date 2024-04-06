@@ -39,6 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.add("clicked");
         cardClicked = true;
 
+        setTimeout(() => {
+          this.classList.add("centered-card");
+          this.classList.add("in-place");
+        }, 300);
+        
         cards.forEach((otherCard) => {
           if (otherCard !== this) {
             otherCard.style.pointerEvents = "none";

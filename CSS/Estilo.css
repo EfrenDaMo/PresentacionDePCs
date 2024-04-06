@@ -75,6 +75,24 @@ body {
     transition: opacity 0.5s ease;
 }
 
+.centered-card {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    transform: translateY(100vh);
+    transition: transform 0.5s ease-out;
+}
+
+.centered-card.in-place {
+    transform: translateY(0);
+    width: 338.25px;
+    height: 504px;
+}
+
 /* Estilos de id */
 #Carousel {
   position: relative;
