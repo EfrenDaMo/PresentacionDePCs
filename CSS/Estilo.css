@@ -1,84 +1,226 @@
 /* Estilos de Componentes HTML */
 body {
-    background-color: rgb(238, 148, 235);
-    justify-content: center;
+  background-color: rgb(238, 148, 235);
+  justify-content: center;
 }
 
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
 /* Estilos de Clases */
 .cards {
-    display: block;
-    width: 282.25px;
-    height: 420px;
-    top:0;
-    position: relative;
-    border-radius: 20px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    border: 1px solid #afe0e9;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 40px;
+  display: inline-block;
+  width: 282.25px;
+  height: 420px;
+  top: 0;
+  position: relative;
+  border-radius: 20px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #afe0e9;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+}
 
-    /*Animacion de Resalto*/
-    &:hover {
-        transition: all 0.3s ease-out;
-        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
-        top: -6px;
-        border: 1px solid #94d5fa;
+/*Animacion de Resalto*/
+.cards:hover {
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+  top: -6px;
+  border: 1px solid #94d5fa;
+}
+
+.cards.clicked, .cards.clicked:hover {
+    box-shadow: 0px 0px 0px;
+    top: 0;
+    border: 0px;
+    /*margin-bottom: 10%;*/
+}
+
+.buttons {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(238, 148, 235);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.6);
+  }
+}
+
+.slide {
+  flex: 0 0 100%;
+  margin-left: 80px;
+  h2 {
+    font-size: 40px;
+  }
+}
+
+.card-grow {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.centered-card {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    transform: translateY(100vh);
+    transition: transform 5s ease;
+}
+
+.centered-card.in-place {
+    transform: translateY(0);
+    transition: opacity 5s ease;
+    width: 338.25px;
+    height: 504px;
+    cursor:default;
+}
+
+.contentBoxStyle1 {
+    height: 90%;
+    width: 90%;
+    margin-left: 12.70085px;
+    margin-top: 21px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+
+    p {
+        font-size: 50px;
     }
 }
 
-/* Estilos de id */
-#cardContainer { 
-    height: 500px;
-    width: 90vw;
-    display: flex;
-    margin-left: 75px;
-    margin-top: 150px;
+.titleGrid {
     justify-content: center;
 }
 
+.imageGrid {
+    padding-left: 10%;
+}
+
+.textGrid {
+    justify-content: center;
+    p{
+        margin-left: 40%;
+        font-size: 60px;
+    }
+    
+}
+
+/* Estilos de id */
+#Carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  h1 {
+    position: absolute;
+    font-size: 55px;
+  }
+}
+
+#cardContainer {
+  height: 85vh;
+  width: 90vw;
+  display: flex;
+  margin-top: 60px;
+  padding-right: 75px;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#cardContainer > div {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#cardContainer > div.show {
+  opacity: 1;
+}
+
+#cardContainer > div.uninteractable {
+  opacity: 0;
+  pointer-events: none;
+}
+
 #card1 {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 #card2 {
-    background-color:aquamarine;
-    width: calc(282.25px * 1.20);
-    height: calc(420px * 1.20); /* incremento del 20% */
+  background-color: aquamarine;
 }
 
 #card3 {
-    background-color:blue ;
+  background-color: blue;
 }
 
-/* se modifica el contenido*/
-.contenido{
-    text-align: center;
-    margin-top: 50px;
-    counter-increment: 20%;
+#card4 {
+  background-color: blueviolet;
 }
 
-/* se modifican las imagenes */
-.imagen_arqui{
-    width: 260px;
-    border-radius: 6px;
-    margin-top: 50px;
+#card5 {
+  background-color: cadetblue;
 }
 
-.imagen_student{
-    width: 260px;
-    border-radius: 6px;
-    margin-top: 50px;
+#card6 {
+  background-color: cornflowerblue;
 }
 
-.img_cualquiera{
-    width: 200px;
-    border-radius: 6px;
-    margin-top: 50px;
+#prevBtn {
+  left: -0.5px;
+  margin-left: 20px;
+}
+
+#nextBtn {
+  right: -0.5px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#backBtn {
+    top: 0%;
+    margin-top: 3%;
+    margin-left: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#backBtn.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#Slide1 {
+  h2 {
+    padding-left: 42%;
+  }
+}
+
+#Slide2 {
+  h2 {
+    padding-left: 33%;
+  }
 }

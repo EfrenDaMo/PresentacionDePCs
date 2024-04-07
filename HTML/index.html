@@ -1,50 +1,171 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" href="../CSS/Estilo.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../JavaScript/Scripts.js"></script>
+  </head>
 
-<body>
-
-    <div class="titulo_propuesta">
-        <h1>
-            Propuestas de PC
-        </h1>
+  <body>
+    <div class="buttons" id="backBtn">
+        <img src="../SVG/backward-solid.svg" alt="Botton de regreso">
     </div>
+    <div id="Carousel">
+      <h1 id="Title1">Propuestas</h1>
+      <button class="buttons" id="prevBtn">
+        <img src="../SVG/arrow-left-solid.svg" alt="Flecha Izquierda" />
+      </button>
 
-    <div id="cardContainer">
-        <div class="cards" id="card1">
-            <center>
-                <img class="imagen_arqui" src="#"> <!--se agrega la imagen de arquitecto-->
-            </center>
-            <div class="contenido" id="arqui_1">
-                <h2>Pc para Arquitecto</h2>
-                <a href="#">leer mas</a> <!--link que direccionara al usuario a otra paginas-->
+      <div id="cardContainer">
+        <div class="slide" id="Slide1">
+          <h2 id="Title2">Arquitecto</h2>
+          <div
+            class="cards"
+            id="card1"
+            onclick="console.log('Clicked card 1');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
             </div>
+          </div>
+
+          <div
+            class="cards"
+            id="card2"
+            onclick="console.log('Clicked card 2');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cards"
+            id="card3"
+            onclick="console.log('Clicked card 3');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="cards" id="card2">
-            <center>
-                <img class="imagen_student" src="#">
-            </center>
-            <div class="contenido" id="student_2">
-                <h2>Pc para Estudiante</h2>
-                <a href="#">leer mas</a> <!--link que direccionara al usuario a otra paginas-->
-            </div>
-        </div>
+        <div class="slide" id="Slide2">
+          <h2 id="Title3">Alumno de Secundaria</h2>
 
-        <div class="cards" id="card3">
-            <center>
-                <img class="img_cualquiera" src="imagenes/TI.jpg">
-            </center>
-            <div class="contenido" id="info_3">
-                <h2>información...</h2>
-                <a href="#">leer mas</a> <!--link que direccionara al usuario a otra paginas-->
+          <div
+            class="cards"
+            id="card4"
+            onclick="console.log('Clicked card 4');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
             </div>
+          </div>
+
+          <div
+            class="cards"
+            id="card5"
+            onclick="console.log('Clicked card 5');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cards"
+            id="card6"
+            onclick="console.log('Clicked card 6');"
+          >
+            <div class="contentBoxStyle1">
+              <div class="titleGrid">
+                <p>Propuesta X</p>
+              </div>
+              <div class="imageGrid">
+                <img
+                  src="../Img/e40d8d2f2651fa6faca4e0a4552f8545.1600.jpg"
+                  alt="Caja de PC"
+                  height="200px"
+                  width="200px"
+                />
+              </div>
+              <div class="textGrid">
+                <p><b>...</b></p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <button class="buttons" id="nextBtn">
+        <img src="../SVG/arrow-right-solid.svg" alt="Flecha Derecha" />
+      </button>
     </div>
-</body>
-
+  </body>
 </html>

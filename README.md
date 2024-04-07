@@ -6,6 +6,7 @@
 
 - Efren D. Morales G.
 - Eduardo Velazquez F.
+- Erika Aguilar P.
 
 ### Otros miembros del Equipo:
 
