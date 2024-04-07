@@ -95,6 +95,37 @@ body {
     cursor:default;
 }
 
+.contentBoxStyle1 {
+    height: 90%;
+    width: 90%;
+    margin-left: 12.70085px;
+    margin-top: 21px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+
+    p {
+        font-size: 50px;
+    }
+}
+
+.titleGrid {
+    justify-content: center;
+}
+
+.imageGrid {
+    padding-left: 10%;
+}
+
+.textGrid {
+    justify-content: center;
+    p{
+        margin-left: 40%;
+        font-size: 60px;
+    }
+    
+}
+
 /* Estilos de id */
 #Carousel {
   position: relative;
@@ -167,6 +198,19 @@ body {
   right: -0.5px;
   margin-right: 20px;
   margin-left: 10px;
+}
+
+#backBtn {
+    top: 0%;
+    margin-top: 2.5%;
+    margin-left: 10px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+#backBtn.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 #Slide1 {

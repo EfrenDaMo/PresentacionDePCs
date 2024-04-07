@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("Title3").classList.add("fade-out");
         document.getElementById("nextBtn").disabled = true;
         document.getElementById("prevBtn").disabled = true;
+        document.getElementById("backBtn").classList.add("fade-in");
       }
     });
   });
