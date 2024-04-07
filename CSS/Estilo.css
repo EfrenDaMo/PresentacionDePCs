@@ -84,13 +84,15 @@ body {
     right: 0;
 
     transform: translateY(100vh);
-    transition: transform 0.5s ease-out;
+    transition: transform 5s ease;
 }
 
 .centered-card.in-place {
     transform: translateY(0);
+    transition: opacity 5s ease;
     width: 338.25px;
     height: 504px;
+    cursor:default;
 }
 
 /* Estilos de id */
