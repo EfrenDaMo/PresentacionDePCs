@@ -78,6 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       document.getElementById("backBtn").classList.remove("fade-in");
       document.getElementById("backBtn").classList.add("fade-out");
+      document.getElementById("contentBoxStyle1").style.visibility = "visible";
+        document.getElementById("contentBoxStyle2").style.visibility = "hidden";
     }
   });
 
@@ -121,6 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("nextBtn").disabled = true;
         document.getElementById("prevBtn").disabled = true;
         document.getElementById("backBtn").classList.add("fade-in");
+        document.getElementById("contentBoxStyle1").style.visibility = "hidden";
+        document.getElementById("contentBoxStyle2").style.visibility = "visible";
       }
     });
   });

@@ -22,7 +22,6 @@
 
       <!-- MARK: Contenedor de cartas -->
       <div id="cardContainer">
-
         <!-- MARK: Tarjeta de cartas 1 -->
         <div class="slide" id="Slide1">
           <h2 id="Title2">Arquitecto</h2>
@@ -33,7 +32,7 @@
             id="card1"
             onclick="console.log('Clicked card 1');"
           >
-            <div class="contentBoxStyle" id="contentBoxStyle1" style="visibility: hidden;">
+            <div class="contentBoxStyle" id="contentBoxStyle1">
               <div class="titleGrid">
                 <p>Propuesta X</p>
               </div>
@@ -50,7 +49,7 @@
               </div>
             </div>
 
-            <div class="contentBoxStyle" id="contentBoxStyle2" style="visibility: visible;">
+            <div class="contentBoxStyle" id="contentBoxStyle2">
               <div class="titleGrid">
                 <p>Propuesta X</p>
               </div>
@@ -63,10 +62,19 @@
                 />
               </div>
               <div class="iconGrid">
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-                <a href="">4</a>
+                <!-- <img src="" alt="" style="visibility: hidden; width: 15px;"> -->
+                <button class="customButtons">
+                  <img src="../SVG/check-solid.svg" alt="" />
+                </button>
+                <button class="customButtons">
+                  <img src="../SVG/question-solid.svg" alt="" />
+                </button>
+                <button class="customButtons">
+                  <img src="../SVG/gear-solid.svg" alt="" />
+                </button>
+                <button class="customButtons">
+                  <img src="../SVG/hand-holding-dollar-solid.svg" alt="" />
+                </button>
               </div>
             </div>
           </div>
