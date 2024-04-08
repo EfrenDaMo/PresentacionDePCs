@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
+  //MARK: Todas las Variables
+
   // Variables
   let currentIndex = 0;
   let cardClicked = false;
@@ -8,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalSlides = slides.length;
   const cards = document.querySelectorAll(".cards");
 
+  //MARK: Todas las Funciones
+
+  // Funcion de mostrar de tarjetas
   function showSlide(index) {
     slides.forEach((slide, i) => {
       if (i === index) {
@@ -20,8 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Inicializacion de Funcion
   showSlide(currentIndex);
 
+  // Funcion de boton de regreso
   document.getElementById("backBtn").addEventListener("click", function () {
     const selectedCard = document.querySelector(".card-grow");
     if (selectedCard) {
@@ -73,16 +81,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Funcion de boton de proximo
   document.getElementById("nextBtn").addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
   });
 
+  // Funicon de boton de anterior
   document.getElementById("prevBtn").addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
   });
 
+  // Funcion de seleccion de tarjeta
   cards.forEach((card) => {
     card.addEventListener(`click`, function () {
       if (!cardClicked) {

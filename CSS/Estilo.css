@@ -1,4 +1,4 @@
-/* Estilos de Componentes HTML */
+/* MARK: Estilos de Componentes HTML */
 body {
   background-color: rgb(238, 148, 235);
   justify-content: center;
@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* Estilos de Clases */
+/*MARK: Estilos de Clases */
 .cards {
   display: inline-block;
   width: 282.25px;
@@ -137,7 +137,7 @@ body {
   }
 }
 
-/* Estilos de id */
+/*MARK: Estilos de id */
 #Carousel {
   position: relative;
   display: flex;
