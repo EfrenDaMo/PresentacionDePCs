@@ -106,7 +106,7 @@ body {
   cursor: default;
 }
 
-.contentBoxStyle1 {
+.contentBoxStyle {
   height: 90%;
   width: 90%;
   margin-left: 12.70085px;
@@ -114,7 +114,8 @@ body {
   display: grid;
   justify-content: center;
   grid-template-rows: auto;
-
+  position: absolute;
+  
   p {
     font-size: 50px;
   }
@@ -239,3 +240,12 @@ body {
     padding-left: 33%;
   }
 }
+
+#contentBoxStyle1 {
+  visibility: visible;
+}
+
+#contentBoxStyle2 {
+  visibility: hidden;
+}
+
